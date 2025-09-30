@@ -13,14 +13,14 @@ const arr: Plan[] = [
 
 const Plans = () => {
   return (
-    <div className="justify-around md:flex-none lg:flex-nowrap m-2">
+    <>
       {" "}
-      <div className="flex gap-2.5">
+      <div className="flex justify-around">
         {arr.map((e, index) => (
           <WebHostingPlan key={index} status={e.status} price={e.price} />
         ))}
       </div>
-    </div>
+    </>
   );
 };
 

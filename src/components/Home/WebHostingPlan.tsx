@@ -29,7 +29,6 @@ const WebHostingPlan = ({ status, price }: Plan) => {
           const val: Number = status == "Free" ? 2 : status == "Plus" ? 4 : 6;
           //   console.log(val);
           const x = index;
-          console.log(x);
 
           if (Number(val) > Number(x)) {
             return (

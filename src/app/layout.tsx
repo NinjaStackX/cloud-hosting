@@ -28,7 +28,7 @@ export default function RootLayout({
       // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <Header />
-        <main className="fix-height p-2.5">{children}</main>
+        <main className="p-2.5">{children}</main>
         <Footer />
       </body>
     </html>

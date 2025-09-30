@@ -1,11 +1,11 @@
-import React from "react";
+import Hero from "@/components/Home/Hero";
+import Plans from "@/components/Home/Plans";
 
 const HomePage = () => {
   return (
-    <div>
-      Home
-      <br />
-      اهلا و سهلا
+    <div className="flex-col items-center">
+      <Hero />
+      <Plans />
     </div>
   );
 };

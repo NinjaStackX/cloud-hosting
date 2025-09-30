@@ -16,3 +16,7 @@ export type Err = {
   error: Error;
   reset: () => void;
 };
+export type Plan = {
+  status: String;
+  price: Number;
+};

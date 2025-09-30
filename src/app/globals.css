@@ -4,7 +4,7 @@
 @tailwind utilities; */
 
 :root {
-  --bg--color: white;
+  --bg--color: rgb(239, 239, 239);
 }
 
 body {
@@ -12,4 +12,8 @@ body {
 }
 .fix-height {
   height: calc(100vh - 150px);
+}
+.ccenter {
+  display: flex;
+  justify-content: center;
 }

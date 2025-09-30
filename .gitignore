@@ -3,7 +3,7 @@
 # dependencies
 /node_modules
 /.pnp
-<<<<<<< HEAD
+
 .pnp.js
 =======
 .pnp.*
@@ -12,7 +12,7 @@
 !.yarn/plugins
 !.yarn/releases
 !.yarn/versions
->>>>>>> c832ae5 (setup)
+
 
 # testing
 /coverage
@@ -32,7 +32,7 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
-<<<<<<< HEAD
+
 
 # local env files
 .env*.local
@@ -42,7 +42,6 @@ yarn-error.log*
 
 # env files (can opt-in for committing if needed)
 .env*
->>>>>>> c832ae5 (setup)
 
 # vercel
 .vercel

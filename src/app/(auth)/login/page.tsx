@@ -1,33 +1,14 @@
-import React from "react";
-import "./login.css";
-const page = () => {
-  return (
-    <div className="basic">
-      <div className="login-container">
-        <h2>تسجيل الدخول</h2>
-        <form>
-          <div className="input-group">
-            <input
-              type="text"
-              placeholder="اسم المستخدم أو البريد الإلكتروني"
-              required
-            />
-            <i className="fa fa-user"></i>
-          </div>
-          <div className="input-group">
-            <input type="password" placeholder="كلمة المرور" required />
-            <i className="fa fa-lock"></i>
-          </div>
-          <button className="btn-login" type="submit">
-            دخول
-          </button>
-          <div className="forgot-password">
-            <a href="#">نسيت كلمة المرور؟</a>
-          </div>
-        </form>
-      </div>
-    </div>
-  );
-};
+import LoginForm from "./LoginForm";
 
-export default page;
+const LoginPage = () => {
+  return (
+    <section className="fix-height container m-auto px-7 flex items-center justify-center">
+      <div className="m-auto bg-white rounded-lg p-5 w-full md:w-2/3">
+        <h1 className="text-3xl font-bold text-gray-800 mb-5">Log In</h1>
+        <LoginForm />
+      </div>
+    </section>
+  )
+}
+
+export default LoginPage

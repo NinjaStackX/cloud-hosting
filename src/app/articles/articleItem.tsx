@@ -1,7 +1,7 @@
 import { Article, Product } from "@/utils/types";
 import Link from "next/link";
 interface ArticleItemsProps {
-  article: Product;
+  article: Article;
 }
 const ArticleItem = ({ article }: ArticleItemsProps) => {
   return (
@@ -10,12 +10,11 @@ const ArticleItem = ({ article }: ArticleItemsProps) => {
         {article.title}
       </h1>
 
-      <p className="my-2 text-xl p-1 line-clamp-1">{article.desc}</p>
-      {/* <p className="my-2 text-xl p-1 line-clamp-1">{article.body}</p> */}
-      <h1>the price: {article.price}</h1>
+      <p className="my-2 text-xl p-1 line-clamp-1">{article.body}</p>
+
       <Link
         className="text-xl bg-purple-700 hover:bg-purple-800 w-full block text-center p-1 text-white rounded-lg "
-        href={`/articles/${article._id}`}
+        href={`/articles/${article.id}`}
       >
         Show Details
       </Link>
